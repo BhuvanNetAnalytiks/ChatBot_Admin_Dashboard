@@ -1,0 +1,29 @@
+{
+  "name": "TalentNetUI",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/shared/",
+    "packages/components/snowflake-ui/*"
+  ],
+  "scripts": {
+    "start:web": "yarn workspace web start",
+    "start:ios": "yarn workspace mobile ios",
+    "start:android": "yarn workspace mobile android",
+    "eslint": "eslint ."
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
+    "@typescript-eslint/eslint-plugin": "^8.6.0",
+    "@typescript-eslint/parser": "^8.6.0",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "eslint": "^9.10.0",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-react": "^7.36.1"
+  },
+  "packageManager": "yarn@3.6.4",
+  "dependencies": {
+    "@tanstack/react-query": "^5.56.2"
+  }
+}

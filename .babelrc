@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react",
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "@snowflake-ui": "./packages/components/snowflake-ui",
+          "@shared": "./packages/shared"
+        },
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    ]
+  ]
+}

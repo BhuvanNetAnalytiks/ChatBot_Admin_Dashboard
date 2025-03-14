@@ -1,0 +1,10 @@
+{
+  "name": "@snowflake-ui/mobile",
+  "version": "1.0.0",
+  "main": "index.native.tsx",
+  "types": "index.d.ts",
+  "files": [
+    "index.native.tsx",
+    "index.d.ts"
+  ]
+}

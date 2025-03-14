@@ -1,0 +1,10 @@
+{
+  "name": "@snowflake-ui/web",
+  "version": "1.0.0",
+  "main": "index.tsx",
+  "types": "index.d.ts",
+  "files": [
+    "index.tsx",
+    "index.d.ts"
+  ]
+}
