@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { navLinks } from "./SideNavLinks";
 import { NavigationSideBar } from "@snowflake-ui/web/Navigation/NavigationSlideBar";
 import { useAuth } from "@shared/core/index";
-import AdminChatbotLogo from '../../assets/AdminChatBot.png';
+import AdminChatbotLogo from "../../assets/AdminChatbot.png";
 import Header from "../Header";
 
 export const SidebarNav: React.FC = (): JSX.Element => {

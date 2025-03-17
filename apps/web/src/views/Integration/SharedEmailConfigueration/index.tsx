@@ -9,6 +9,7 @@ const Container = styled.div`
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #f9f9f9;
+  position: relative; /* Added for positioning the enable button */
 `;
 
 const Form = styled.form`
@@ -36,6 +37,12 @@ const Button = styled.button`
   &:hover {
     background-color: #0056b3;
   }
+`;
+
+const EnableButton = styled(Button)`
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 `;
 
 const Message = styled.div`
@@ -111,6 +118,10 @@ const App: React.FC = () => {
   return (
     <Container>
       <h1>Shared Email Credentials</h1>
+
+      <EnableButton type="button">
+        Enable
+      </EnableButton>
 
       <Form onSubmit={handleVerifyImapSmtp}>
         <h2>Verify and Save IMAP and SMTP Credentials</h2>
