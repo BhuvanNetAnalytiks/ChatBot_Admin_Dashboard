@@ -69,9 +69,9 @@ const IntegrationSection: React.FC = () => {
             <Heading>Integration Section</Heading>
             <Description>Welcome to the section on integration. Please select what you wish to incorporate.</Description>
             <ButtonContainer>
-                <Button onClick={handleSharedEmailConfig}>Enter Shared Email Configurations</Button>
+                <Button onClick={handleSharedEmailConfig}>Shared Email Box Configuration</Button>
                 <Button onClick={handleTicketingSystemConfig}>Select Ticketing System</Button>
-                <Button onClick={handleSmtpConfigueration}>Enter SMTP Configueration</Button>
+                <Button onClick={handleSmtpConfigueration}>SMTP Configuration</Button>
             </ButtonContainer>
         </Container>
     );

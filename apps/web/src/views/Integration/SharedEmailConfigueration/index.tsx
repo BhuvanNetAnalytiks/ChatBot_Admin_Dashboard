@@ -141,7 +141,7 @@ const App: React.FC = () => {
       <h1>Shared Email Credentials</h1>
 
       <EnableButton type="button" onClick = {handleEnableMailAgent}>
-        Enable Main Agent
+        Enable Mail Agent
       </EnableButton>
 
       <Form onSubmit={handleVerifyImapSmtp}>
@@ -181,7 +181,7 @@ const App: React.FC = () => {
         <Input
           type="number"
           name="imapPortNumber"
-          placeholder="Port Number (e.g., 993)"
+          placeholder=" IMAP Port Number (e.g., 993)"
           value={formData.imapPortNumber}
           onChange={handleChange}
           required
