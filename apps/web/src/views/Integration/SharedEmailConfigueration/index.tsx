@@ -115,12 +115,33 @@ const App: React.FC = () => {
     }
   };
 
+
+  const handleEnableMailAgent = async () => {
+    try {
+      console.log("Button clicked! Sending request...");
+      const response = await fetch("http://localhost:5000/enable-mail-agent", {
+        method: "POST",
+      });
+  
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+  
+      const result = await response.json();
+      console.log("Response:", result);
+      alert(result.message || result.error);
+    } catch (error) {
+      console.error("Error enabling Mail Agent:", error);
+      alert("Failed to enable Mail Agent.");
+    }
+  };
+  
   return (
     <Container>
       <h1>Shared Email Credentials</h1>
 
-      <EnableButton type="button">
-        Enable
+      <EnableButton type="button" onClick = {handleEnableMailAgent}>
+        Enable Main Agent
       </EnableButton>
 
       <Form onSubmit={handleVerifyImapSmtp}>
